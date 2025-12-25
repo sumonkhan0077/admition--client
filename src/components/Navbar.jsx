@@ -39,11 +39,8 @@ const Navbar = () => {
               Explore
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
             </a>
-            <a href="#compare" className="text-gray-700 font-medium hover:text-blue-600 transition relative group">
-              Compare
-              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
-            </a>
-            <a href="#apply" className="text-gray-700 font-medium hover:text-blue-600 transition relative group">
+        
+            <a href="#universities" className="text-gray-700 font-medium hover:text-blue-600 transition relative group">
               Apply
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
             </a>

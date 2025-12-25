@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import HomeSection from './components/Home';
 import UniversityList from './components/UniversityList';
 import ComparisonModal from './components/ComparisonModal';
+import Footer from './components/Footer';
 
 function App() {
   const [universities, setUniversities] = useState([]);
@@ -67,7 +68,7 @@ useEffect(() => {
         />
       )}
 
-      {/* UniversityList-এর নিচে Compare বাটন থেকে ট্রিগার করার জন্য */}
+    {/* button of compar */}
       {selectedCompareIds.length >= 2 && selectedCompareIds.length <= 3 && (
         <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40">
           <button
@@ -78,6 +79,8 @@ useEffect(() => {
           </button>
         </div>
       )}
+
+      <Footer/>
     </>
   )
 }
