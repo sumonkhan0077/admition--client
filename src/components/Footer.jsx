@@ -18,10 +18,10 @@ const Footer = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="flex items-center space-x-4 mb-6">
-              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-3xl font-bold">U</span>
-              </div>
-              <h2 className="text-3xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+             <div className="">
+              <img className='w-10 h-10 ' src="../../src/assets/download.png" alt="logo" />
+            </div>
+              <h2 className="text-3xl font-extrabold bg-gradient-to-r from-[#BB8ED0] to-[#3e8fae] bg-clip-text text-transparent">
                 UniFinder
               </h2>
             </div>

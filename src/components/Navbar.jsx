@@ -17,8 +17,8 @@ const Navbar = () => {
             transition={{ duration: 0.6 }}
             className="flex items-center space-x-3"
           >
-            <div className="w-12 h-12 bg-[#3e8fae] rounded-xl flex items-center justify-center shadow-md">
-              <span className="text-2xl font-bold text-white">U</span>
+            <div className="">
+              <img className='w-10 h-10 ' src="../../src/assets/download.png" alt="logo" />
             </div>
             <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#BB8ED0] to-[#3e8fae] bg-clip-text text-transparent">
               UniFinder
