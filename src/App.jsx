@@ -73,7 +73,7 @@ useEffect(() => {
         <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40">
           <button
             onClick={() => setShowComparison(true)}
-            className="bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xl font-bold px-12 py-5 rounded-full shadow-2xl hover:shadow-3xl transition transform hover:scale-110"
+            className="bg-gradient-to-r from-[#3291B6] to-[#E0A8A8] text-white text-xl font-bold px-12 py-5 rounded-full shadow-2xl hover:shadow-3xl transition transform hover:scale-110"
           >
             Compare {selectedCompareIds.length} Universities
           </button>
