@@ -23,7 +23,7 @@ const UniversityList = ({ onCompareSelected }) => {
     debouncedFetchRef.current = debounce((params) => {
       setLoading(true);
 
-      fetch(`http://localhost:5000/universities/filter?${params}`)
+      fetch(`https://sumon.tahmied.com/universities/filter?${params}`)
         .then((res) => {
           if (!res.ok) throw new Error("Fetch failed");
           return res.json();

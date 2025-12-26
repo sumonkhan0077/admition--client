@@ -7,7 +7,6 @@ import HomeSection from "./components/Home";
 import UniversityList from "./components/UniversityList";
 import ComparisonModal from "./components/ComparisonModal";
 import Footer from "./components/Footer";
-import UniversityListCard from "./components/UniversityListCard";
 
 function App() {
   const [universities, setUniversities] = useState([]);
@@ -75,7 +74,7 @@ function App() {
           </button>
         </div>
       )}
-      {/* <UniversityListCard/> */}
+     
 
       <Footer />
     </>

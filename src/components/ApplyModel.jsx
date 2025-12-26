@@ -36,7 +36,7 @@ const ApplyModel = ({ university }) => {
   submitBtn.disabled = true;
 
   try {
-    const response = await fetch("http://localhost:5000/applications", {
+    const response = await fetch("https://sumon.tahmied.com/universities/applications", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
