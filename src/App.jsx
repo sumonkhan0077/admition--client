@@ -9,35 +9,18 @@ import ComparisonModal from "./components/ComparisonModal";
 import Footer from "./components/Footer";
 
 function App() {
-  const [universities, setUniversities] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
   const [selectedCompareIds, setSelectedCompareIds] = useState([]);
   const [showComparison, setShowComparison] = useState(false);
   const [universitiesToCompare, setUniversitiesToCompare] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:5000/universities")
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to fetch universities");
-        return res.json();
-      })
-      .then((data) => {
-        setUniversities(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setLoading(false);
-      });
-  }, []);
+  
 
   const handleCompareSelected = async (ids) => {
     setSelectedCompareIds(ids);
 
     if (ids.length >= 2) {
       // সিলেক্টেড আইডি দিয়ে ডাটা ফেচ করো (বা UniversityList থেকে পাস করো)
-      const response = await fetch("http://localhost:5000/universities");
+      const response = await fetch("https://sumon.tahmied.com/universities");
       const allUnis = await response.json();
       const selectedUnis = allUnis.filter((uni) => ids.includes(uni.id));
       setUniversitiesToCompare(selectedUnis);
