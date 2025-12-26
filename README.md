@@ -1,16 +1,76 @@
-# React + Vite
+# UniFind - University Admission Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**UniFind** is a modern, user-friendly university admission platform designed to help high school and college students find their perfect university. Search, filter, and compare universities based on budget, test scores, GPA requirements, location, programs, and more — all in one place!
 
-## React Compiler
+Live Demo: [https://unifinder-students.netlify.app/](https://unifinder-students.netlify.app/)  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Author**: Md Sumon Khan  
+**Tech Stack**:  (MySQL, Express, React, Node.js)
 
-## Expanding the ESLint configuration
+---
+![Banner](/src/assets/banner.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+
+- **Smart Search & Filters**  
+  Filter universities by:
+  - Budget / Tuition fees
+  - IELTS / GPA scores
+  - Required GPA
+  - Location (country, city, or region)
+  - Program type (Undergraduate, Postgraduate, etc.)
+  - University ranking & reputation
+
+- **Detailed University Profiles**  
+  View complete info: admission requirements, deadlines, scholarships, campus life, and more.
+
+- **Compare Universities**  
+  Select and compare multiple universities side-by-side for easy decision-making.
+
+- **Responsive & Modern UI**  
+  Fully mobile-friendly design built with React and Tailwind CSS.
+
+- **Secure Backend with MySQL**  
+  Powered by Node.js + Express and MySQL database for reliable data management.
+
+## 🖥️ Tech Stack
+
+### Frontend
+- React.js (Vite)
+- Tailwind CSS
+- React Components (Header, Footer, Navbar, UniversityList, ComparisonModal, etc.)
+
+### Backend
+- Node.js + Express
+- MySQL Database
+- REST API
+
+### Deployment
+- Frontend: [Netlify](https://unifinder-students.netlify.app/)
+- Backend: [GitHub Repo - Admission Server](https://github.com/sumonkhan0077/admition-server)
+
+## 📂 Project Structure
+```
+src/
+├── assets/             # Images, icons
+├── components/         # Reusable components
+│   ├── ApplyModal.jsx
+│   ├── ComparisonModal.jsx
+│   ├── Footer.jsx
+│   ├── Header.jsx
+│   ├── Home.jsx
+│   ├── Navbar.jsx
+│   ├── University.jsx
+│   └── UniversityList.jsx
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+public/                 # Public assets (vite.svg, etc.)
+README.md
+package.json
+vite.config.js
+```
+

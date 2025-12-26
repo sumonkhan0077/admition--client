@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import logo from "../assets/download.png"
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
           >
             <div className="flex items-center space-x-4 mb-6">
              <div className="">
-              <img className='w-10 h-10 ' src="../../src/assets/download.png" alt="logo" />
+              <img className='w-10 h-10 ' src={logo} alt="logo" />
             </div>
               <h2 className="text-3xl font-extrabold bg-gradient-to-r from-[#BB8ED0] to-[#3e8fae] bg-clip-text text-transparent">
                 UniFinder

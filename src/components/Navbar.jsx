@@ -1,6 +1,7 @@
 // src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import logo from "../assets/download.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
             className="flex items-center space-x-3"
           >
             <div className="">
-              <img className='w-10 h-10 ' src="../../src/assets/download.png" alt="logo" />
+              <img className='w-10 h-10 ' src={logo} alt="logo" />
             </div>
             <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#BB8ED0] to-[#3e8fae] bg-clip-text text-transparent">
               UniFinder
